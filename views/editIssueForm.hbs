@@ -1,0 +1,11 @@
+<h1>Edit Issue</h1>
+
+<form action="/issue/{{_id}}?_method=PUT" method="POST">
+    
+    <input type="text" name="description" placeholder="description" value="{{description}}"/>
+    <input type="number" name="createdAt" placeholder="createdAt" value="{{createdAt}}"/>
+    <input type="text" name="status" placeholder="status" value="{{status}}"/>
+    <input type="text" name="priority" placeholder="priority" value="{{priority}}"/>
+    <input type="submit" value="save"/>
+
+</form>
